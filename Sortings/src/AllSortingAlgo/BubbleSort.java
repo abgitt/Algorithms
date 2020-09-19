@@ -4,8 +4,8 @@ public class BubbleSort
 {
 	public static void main(String[] args)
 	{
-		int[] arr = new int[] {21,23,12,34,2,7};
 		CommonFunctionalities obj = new CommonFunctionalities();
+		int[] arr = obj.getArray.get();//new int[] {21,23,12,34,2,7};
 		descendingSort(arr);
 		obj.displayArray.accept(arr);	
 		// System.out.println(obj.displayArray.apply(arr));

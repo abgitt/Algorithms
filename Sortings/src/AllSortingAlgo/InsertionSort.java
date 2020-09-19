@@ -5,7 +5,7 @@ public class InsertionSort {
 	{
 
 		CommonFunctionalities obj = new CommonFunctionalities();
-		int[] arr = new int[] {21,23,12,34,2,7};
+		int[] arr = obj.getArray.get();//new int[] {21,23,12,34,2,7};
 		ascendingSort(arr);
 		obj.displayArray.accept(arr);	
 		descendingSort(arr);
