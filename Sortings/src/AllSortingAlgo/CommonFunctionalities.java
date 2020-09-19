@@ -1,18 +1,9 @@
-package AllSortingAlgo;
-
+import java.util.*;
+import java.util.function.*;
 public class CommonFunctionalities 
 {
-	public void displayArray(int[] arr)
-	{
-		System.out.println("*******************");
-		System.out.println();
-		for(int i:arr)
-		{
-			System.out.print(i+"  ");
-		}
-		System.out.println();
-		System.out.println();
+	public Consumer<int[]> displayArray = arr ->System.out.println(Arrays.toString(arr));
+	// public Function<int[],String> displayArray = Arrays::toString; //working fine
 
-		System.out.println("*******************");
-	}
+	
 }

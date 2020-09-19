@@ -1,4 +1,3 @@
-package AllSortingAlgo;
 
 public class InsertionSort {
 
@@ -6,42 +5,40 @@ public class InsertionSort {
 	{
 
 		CommonFunctionalities obj = new CommonFunctionalities();
-				int[] arr = new int[] {21,23,12,34,2,7};
-				ascendingSort(arr);
-				obj.displayArray(arr);
-				descendingSort(arr);
-				obj.displayArray(arr);
-
-
-			}
-			public static void ascendingSort(int[] arr)
+		int[] arr = new int[] {21,23,12,34,2,7};
+		ascendingSort(arr);
+		obj.displayArray.accept(arr);	
+		descendingSort(arr);
+		obj.displayArray.accept(arr);	
+	}
+	public static void ascendingSort(int[] arr)
+	{
+		for(int j=1;j<arr.length;j++)
+		{
+			int key = arr[j];
+			int i=j-1;
+			while(i>=0 && arr[i]>key)
 			{
-				for(int j=1;j<arr.length;j++)
-				{
-					int key = arr[j];
-					int i=j-1;
-					while(i>=0 && arr[i]>key)
-					{
-						arr[i+1]=arr[i--];
-					}
-					arr[i+1]=key;
-				}
+				arr[i+1]=arr[i--];
 			}
-			public static void descendingSort(int[] arr)
+			arr[i+1]=key;
+		}
+	}
+	public static void descendingSort(int[] arr)
+	{
+		for(int j=1;j<arr.length;j++)
+		{
+			int key = arr[j];
+			int i=j-1;
+			while(i>=0 && arr[i]<key)
 			{
-				for(int j=1;j<arr.length;j++)
-				{
-					int key = arr[j];
-					int i=j-1;
-					while(i>=0 && arr[i]<key)
-					{
-						arr[i+1]=arr[i--];
-					}
-					arr[i+1]=key;
-					System.out.println();
-
-				}
+				arr[i+1]=arr[i--];
 			}
+			arr[i+1]=key;
+			System.out.println();
+
+		}
+	}
 		
 
 }
