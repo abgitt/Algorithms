@@ -67,6 +67,8 @@
 			 o(nlogn) we reeatedly partiontiong the array into 2 halves
 			 unstable algo(since we are moving the elements to left and right etc...)   
 
+			 Note : Pivot can be any element...It is not necessary to be first element  
+
 */
 
 import java.util.*;
@@ -76,6 +78,65 @@ public class QuickSort
 {
 	public static void main(String[] args) 
 	{
+			CommonFunctionalities obj = new CommonFunctionalities();
+			// int[] arr = obj.getArray.get();
+			int[] arr = {20,35,-15,7,55,1,-22};
+			obj.displayArray.accept(arr);
+
+			System.out.println("Above is original");
+
+			quickSort(arr,0,arr.length);
+			obj.displayArray.accept(arr);
+
+
+			/*int start = 0,end = arr.length-1;
+			int i=start,j=end;
+			int pivot = arr[i];
+
+			while(i<=j)
+			{
+				System.out.println(i+" "+j);
+
+				while(arr[j]>pivot)
+					j--;
+				arr[i]=arr[j];
+				obj.displayArray.accept(arr);
+				// j--;
+				while(arr[i]<pivot)
+					i++;
+				arr[j]=arr[i];
+				// i++;
+				obj.displayArray.accept(arr);
+			}
+			arr[i]=pivot;
+			obj.displayArray.accept(arr);*/
+	}
+
+	public static void quickSort(int[] arr,int start,int end)
+	{
+		if(end-start<2)
+			return ;
+		int pivotInd = partition(arr,start,end);
+		quickSort(arr,start,pivotInd);
 		
+		quickSort(arr,pivotInd+1,end);
+	}
+
+	public static int partition(int[] arr,int start,int end )
+	{
+		int pivot = arr[start];
+		int i=start,j=end;
+		while(i<j) //if (i>j) means it is crossed
+		{
+
+			while(i<j && arr[--j]>=pivot);
+			if(i<j)
+				arr[i]=arr[j];
+			while(i<j && arr[++i]<=pivot)
+			if(i<j)
+				arr[j]=arr[i];	
+		}
+		arr[j]=pivot;
+		return j;
 	}
 }	
