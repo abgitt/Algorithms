@@ -63,6 +63,8 @@ public class CountingSort
 	{
 		int[] arr = {2,5,9,8,2,8,7,10,4,3,2,11,5};
 		int[] count_arr = new int[arr.length];
+		int[] arr = {3,9,9,2,8,2};
+		int[] count_arr = new int[10];
 		for(int i=0;i<arr.length;i++)
 		{
 			count_arr[i]=0;
