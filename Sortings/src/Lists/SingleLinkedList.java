@@ -44,6 +44,7 @@ public class SingleLinkedList
 		System.out.println(emp4.equals(new Employee("Twisa","Tewary","26")));
 
 		EmployeeLinkedList lst = new EmployeeLinkedList();
+		System.out.println(lst.isListEmpty());
 		lst.addAtFront(emp1);
 		// lst.printLst();
 		lst.addAtFront(emp2);
@@ -51,25 +52,26 @@ public class SingleLinkedList
 		lst.addAtFront(emp4);
 		// lst.printLst();
 		lst.addAtFront(emp3);
-		System.out.println("After adding the elements  - "+lst.getSize());
+		System.out.println("After adding all the elements  - "+lst.getSize());
 		lst.printLst();
 
-		// System.out.println("This node got deleted - "+lst.removeAtFront().getEmployee.get());
+		System.out.println("The top node got deleted - "+lst.removeAtFront().getEmployee.get()+" - "+lst.getSize());
 		lst.printLst();
-		System.out.println("After adding the element at end  - ");
+		System.out.print("After adding the element at end  - ");
 		lst.addAtEnd(new Employee("Sonali","Chaudary","27"));
-		lst.printLst();
-
-		System.out.println("After adding the element at end  - "+lst.getSize());
-		lst.addAtEnd(new Employee("Navneetha","Chaudary","28"));
-		lst.printLst();
-		System.out.println("After adding the element at top  - "+lst.getSize());
-		lst.addAtFront(new Employee("Nishant","Pandey","1"));
-		lst.printLst();
 		System.out.println(lst.getSize());
+		lst.printLst();
+		System.out.print("After adding the element at end  - ");
+		lst.addAtEnd(new Employee("Navneetha","Chaudary","28"));
+		System.out.println(lst.getSize());
+		lst.printLst();
+		System.out.print("After adding the element at top  - ");
+		lst.addAtFront(new Employee("Nishant","Pandey","1"));
+		System.out.println(lst.getSize());
+		lst.printLst();
 		System.out.println("This last node got deleted - "+lst.removeAtEnd().getEmployee.get()+"--"+lst.getSize());
 		lst.printLst();
-
+		System.out.println(lst.isListEmpty());
 
 	}
 }

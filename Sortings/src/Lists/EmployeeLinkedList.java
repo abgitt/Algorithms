@@ -22,11 +22,14 @@ public class EmployeeLinkedList
 		}
 	}
 
-	public EmployeeNode removeAtFront()
+	public EmployeeNode removeAtFront() //removeFromFront
 	{
+		if(isListEmpty())
+			return null;
 		EmployeeNode removeNode = head;
 		head = head.getNext.get();
 		size--;
+		removeNode.setNext.accept(null);
 		return removeNode;
 	}
 
@@ -38,7 +41,7 @@ public class EmployeeLinkedList
 
 		while(cur!=null)
 		{
-			System.out.println(cur);
+			// System.out.println(cur);
 			cur = cur.getNext.get();
 			if(cur!=null)
 			prev = cur;
@@ -61,5 +64,12 @@ public class EmployeeLinkedList
 
 		return removeNode;
 	}
-	public int getSize(){return size;}
+	public int getSize()
+	{
+		return size;
+	}
+	public boolean isListEmpty()
+	{
+		return head==null;
+	}
 }
