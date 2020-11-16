@@ -1,4 +1,6 @@
+package AllSortingAlgo;
 /*
+
 *	Quick Sort : Divide and Conquer
 			Recusrive
 			Uses pivot element and divide the array into 2 parts

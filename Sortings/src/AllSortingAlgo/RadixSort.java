@@ -1,4 +1,6 @@
+package AllSortingAlgo;
 /*
+
 Radix Sort :
 	- Make assumptions about data
 	- Data must have same radix<--------->(for decimal (0-9),for binary(0 and 1) and for alphabet (a-z))

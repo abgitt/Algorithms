@@ -1,4 +1,7 @@
+package Lists;
+
 /*
+
 Each item in a linked list is again an array of another item
 Each item contain a link to another element
 Each item in the list called a node

@@ -1,3 +1,4 @@
+package AllSortingAlgo;
 import java.util.*;
 public class SelectionSort
 {

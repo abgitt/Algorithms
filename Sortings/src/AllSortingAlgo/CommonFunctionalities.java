@@ -1,3 +1,4 @@
+package AllSortingAlgo;
 import java.util.*;
 import java.util.function.*;
 public class CommonFunctionalities 

@@ -1,3 +1,4 @@
+package AllSortingAlgo;
 /* Notes
 
 Recursion : A function calling it self

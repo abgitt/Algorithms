@@ -1,4 +1,6 @@
+package AllSortingAlgo;
 /*
+
 Counting sort:
 	make assumptions about data(so far the algo discussed is not make any assumptions)
 	used for whole numbers(not for floats or string) - only worked with non negative discrete numbers
@@ -63,8 +65,7 @@ public class CountingSort
 	{
 		int[] arr = {2,5,9,8,2,8,7,10,4,3,2,11,5};
 		int[] count_arr = new int[arr.length];
-		int[] arr = {3,9,9,2,8,2};
-		int[] count_arr = new int[10];
+		
 		for(int i=0;i<arr.length;i++)
 		{
 			count_arr[i]=0;
