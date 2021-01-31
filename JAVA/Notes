@@ -1,0 +1,63 @@
+Primitive type :
+	Basic  building block
+	They will have just values and no ref types involved
+	basic value type and no method are involved in them
+	byte short int long float double char boolean
+	
+Ref type:
+	A string or any type we create
+	usually we create ref type using primitve types. Thats why primitive types are basic building blocks 
+
+	
+Java is pass by reference by value :)
+
+But java is pass by value...........
+Mutation :  Changing the orignal object state inside a function in such a way that original object will lead to unexpected results
+
+So we have to avoid mutation. Since mutation is changing the original obejct properties, so if we use them, it lead to unpredectable
+changes
+
+how can we avoid mutation???
+	Simple, We are not suppose to change the original object.
+	How can we do that?? if it is an array use Create a new array of same using existing array :)
+		a = Arrays.copy(a,a.length);
+		
+Polymorphism : Ability to present an interface for diff types of data.
+
+compile time : 2 or more methods with same in a class as long as diff types of parameters and diff return type.
+				Having more than one method with same name. We can use same method name with diff parametes to calculate area.
+				Ex : square area with int,square area with double and rect area with length and width
+
+Runtime : How ref type works
+			If some classes having some common characters we can move it to a a category to achieve reusabilty.
+			We can make that parent class as an IFace for all child classes.This is called inheritance.
+			There is no need to create multiple methods as in overloading.
+			Instead of creating same method for different types of animals like cat,dog,horse we can categorize them into Interfacce Animal
+				and we can use that interface to represent different animals
+			this is called run time polymorphism.
+			
+			Based on reference methods will execute is also called as runtime polymorphism.
+			Using animal ref, we can create objects of cat,dog and horse
+			
+			Till now we disscuss how to implement polymorphism using inheritexce(extedns);
+			
+			
+			
+Abstacrt vs interface
+=======================
+
+runtime poly can be achived by above
+
+Abstract : We have to make categorized parent class as abstract. By doing that we can restrict creating the objects. (IS-A), zero or more abstract methods.private proteted and public methds
+extends
+
+IFace : Has A, (phone,clock are having alarm feature but we can't categorize them under one category).can not create instance. can have static and final variables.Private ad protected not allowed.
+implements		   
+
+Wrapper
+====
+for primitive type erapper class is associated. for collection it only accpets objects rather than primitive tupe
+int num = 10;
+integer ref = num //by boxing we can convert primitive type to object
+	// by unboxig object to primitive data 
+ 

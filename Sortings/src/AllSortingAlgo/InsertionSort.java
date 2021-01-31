@@ -5,14 +5,14 @@ public class InsertionSort {
 	public static void main(String[] args) 
 	{
 
-		CommonFunctionalities obj = new CommonFunctionalities();
+				CommonFunctionalities obj = new CommonFunctionalities();
 				int[] arr = new int[] {21,23,12,34,2,7};
 				ascendingSort(arr);
 				obj.displayArray(arr);
 				descendingSort(arr);
 				obj.displayArray(arr);
-
-
+				
+				
 			}
 			public static void ascendingSort(int[] arr)
 			{
